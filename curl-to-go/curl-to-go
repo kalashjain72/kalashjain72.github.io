@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+const c2g = require('./resources/js/curl-to-go.js')
+const cmd = process.argv[2]
+
+if (cmd == ""){
+    console.log("// No curl command supplied!")
+    process.exit(1)
+}
+
+console.log(c2g(cmd))
